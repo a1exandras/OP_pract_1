@@ -24,7 +24,7 @@ namespace WpfApp2
     public partial class Window1 : Window
     {
         string path = @"C:\temp_op\sem2prac1test1.txt";
-
+        //timer :)
         Stopwatch st = new Stopwatch();
         Random rnd = new Random();
 
