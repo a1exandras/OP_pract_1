@@ -22,6 +22,7 @@ namespace WpfApp2
     /// </summary>
     public partial class Window2 : Window
     {
+        //timer
         Stopwatch st = new Stopwatch();
 
         static string codeword = "gachimuchi";
