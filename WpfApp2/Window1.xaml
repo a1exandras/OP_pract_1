@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp2.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock FontSize="30pt" HorizontalAlignment="Center" VerticalAlignment="Center">Authentification</TextBlock>
+
+        <TextBlock x:Name="codeWordText" Grid.Row="1" VerticalAlignment="Center" FontSize="20pt">Code Word:&#160;</TextBlock>
+        
+        <TextBox x:Name="inputBox" Margin="15" Grid.Row="2" FontSize="25pt" KeyDown="inputBox_KeyDown"/>
+
+        <Button x:Name="quitButton" Margin="30" Grid.Row="3" Content="To Main Window" FontSize="15pt" Background="IndianRed" Click="quitButton_Click"/>
+    </Grid>
+</Window>
